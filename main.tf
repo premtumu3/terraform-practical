@@ -110,7 +110,7 @@ protocol = "-1"
 cidr_blocks = ["0.0.0.0/0"]
 }
 }
-aws "aws_s3_bucket" "six" {
+resource "aws_s3_bucket" "six" {
 bucket = "bucket.premtumu3.k8s.local"
 }
 
@@ -124,7 +124,7 @@ description = "*"
 type = set(string)
 default = ["user1","user2","user3","user4"]
 }
-resource "aws.ebs.volume" "eight" {
+resource "aws_ebs_volume" "eight" {
 availability_zone = "ap-south-1a"
 size = 40
 tags = {
