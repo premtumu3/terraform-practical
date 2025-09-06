@@ -93,7 +93,7 @@ Name = "app-server -1"
 resource "aws_security_group" "five" {
 ingress {
 from_port = 22
-t0_port = 22
+to_port = 22
 protocol = "tcp"
 cidr_blocks = ["0.0.0.0/0"]
 }
