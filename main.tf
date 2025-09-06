@@ -120,7 +120,7 @@ name = each.value
 }
 
 variable "user_names" {
-description "*"
+description = "*"
 type = set(string)
 default = ["user1","user2","user3","user4"]
 }
